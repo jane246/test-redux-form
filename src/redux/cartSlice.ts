@@ -28,7 +28,7 @@ const cartSlice = createSlice({
               } else {//ถ้าจำนวนเป็น 0 เอาออก
                 state.items.splice(indexID, 1);
               }
-            } else if (quantity > 0) {//กดเพิ่มแต่ไม่มีสินค้าก็เพิ่มสินค้า
+            } else {//กดเพิ่มแต่ไม่มีสินค้าก็เพิ่มสินค้า
               state.items.push({ id, quantity });
             }
           },

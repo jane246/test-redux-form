@@ -7,7 +7,7 @@ const ButtonCard: React.FC<ButtonCardProps>=({id})=>{
   const carts = useSelector((state: RootState) => state.carts.items);
   const cartItem = carts.find((item) => item.id === id);
   const quantity = cartItem ? cartItem.quantity : 0; //ถ้าไม่มีค่าให้ใช้ 0 เอาไปกำหนดการแสดงผลของปุ่ม
-  //console.log(carts);  //เอาผลการเพิ่มการลดออกมาดู
+  console.log(carts);  //เอาผลการเพิ่มการลดออกมาดู
 
   const dispatch=useDispatch();
   const ClickAddCart=()=>{//กดเพิ่มทีละ 1
